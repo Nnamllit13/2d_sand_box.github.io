@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>2D Sandbox Spiel</title>
+  <title>2D Sandbox Game</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Willkommen zum 2D Sandbox Spiel!</h1>
-  <p>Genießen Sie endlose Kreativität und erkunden Sie eine offene Welt.</p>
+  <h1>Welcome to the 2D Sandbox Game!</h1>
+  <p>Enjoy endless creativity and explore an open world.</p>
 
   <h2>Features:</h2>
   <ul>
-    <li>Bauen Sie Ihre eigene Welt</li>
-    <li>Sammlung von Ressourcen</li>
-    <li>Erkundung der Umgebung</li>
-    <li>Interaktion mit Objekten</li>
+    <li>Build your own world</li>
+    <li>Collect resources</li>
+    <li>Explore the environment</li>
+    <li>Interact with objects</li>
   </ul>
 
-  <h2>Systemanforderungen:</h2>
+  <h2>System Requirements:</h2>
   <ul>
     <li>OS: Windows, macOS, Linux</li>
-    <li>Prozessor: 2 GHz Dual Core</li>
-    <li>Speicher: 4 GB RAM</li>
-    <li>Grafik: DirectX 9.0c-kompatible Grafikkarte</li>
-    <li>Speicherplatz: 500 MB verfügbarer Speicherplatz</li>
+    <li>Processor: 2 GHz Dual Core</li>
+    <li>Memory: 4 GB RAM</li>
+    <li>Graphics: DirectX 9.0c-compatible graphics card</li>
+    <li>Storage: 500 MB available space</li>
   </ul>
-  <a href="https://nnamllit13.github.io/2d_sand_box.github.io/2DSandBox_Setup.exe" download class="download-button">Jetzt herunterladen</a>
+
+  <button onclick="changeLanguage('en')">Switch to English</button>
+  <a href="https://nnamllit13.github.io/2d_sand_box.github.io/2DSandBox_Setup.exe" download class="download-button">Download Now</a>
+
+  <script>
+    function changeLanguage(lang) {
+      if (lang === 'en') {
+        document.getElementById('title').innerHTML = '2D Sandbox Game';
+        document.getElementById('welcome-message').innerHTML = 'Welcome to the 2D Sandbox Game!';
+        document.getElementById('features').innerHTML = 'Features:';
+        document.getElementById('build-world').innerHTML = 'Build your own world';
+        document.getElementById('collect-resources').innerHTML = 'Collect resources';
+        document.getElementById('explore-environment').innerHTML = 'Explore the environment';
+        document.getElementById('interact-objects').innerHTML = 'Interact with objects';
+        document.getElementById('system-requirements').innerHTML = 'System Requirements:';
+        document.getElementById('os').innerHTML = 'OS: Windows, macOS, Linux';
+        document.getElementById('processor').innerHTML = 'Processor: 2 GHz Dual Core';
+        document.getElementById('memory').innerHTML = 'Memory: 4 GB RAM';
+        document.getElementById('graphics').innerHTML = 'Graphics: DirectX 9.0c-compatible graphics card';
+        document.getElementById('storage').innerHTML = 'Storage: 500 MB available space';
+        document.querySelector('button').innerHTML = 'Switch to German';
+        document.querySelector('a.download-button').innerHTML = 'Jetzt herunterladen';
+      } else if (lang === 'de') {
+        document.getElementById('title').innerHTML = '2D Sandbox Spiel';
+        document.getElementById('welcome-message').innerHTML = 'Willkommen zum 2D Sandbox Spiel!';
+        document.getElementById('features').innerHTML = 'Merkmale:';
+        document.getElementById('build-world').innerHTML = 'Bauen Sie Ihre eigene Welt';
+        document.getElementById('collect-resources').innerHTML = 'Sammlung von Ressourcen';
+        document.getElementById('explore-environment').innerHTML = 'Erkundung der Umgebung';
+        document.getElementById('interact-objects').innerHTML = 'Interaktion mit Objekten';
+        document.getElementById('system-requirements').innerHTML = 'Systemanforderungen:';
+        document.getElementById('os').innerHTML = 'OS: Windows, macOS, Linux';
+        document.getElementById('processor').innerHTML = 'Prozessor: 2 GHz Dual Core';
+        document.getElementById('memory').innerHTML = 'Speicher: 4 GB RAM';
+        document.getElementById('graphics').innerHTML = 'Grafik: DirectX 9.0c-kompatible Grafikkarte';
+        document.getElementById('storage').innerHTML = 'Speicherplatz: 500 MB verfügbarer Speicherplatz';
+        document.querySelector('button').innerHTML = 'Switch to English';
+        document.querySelector('a.download-button').innerHTML = 'Download Now';
+      }
+    }
+  </script>
 </body>
 </html>
